@@ -14,6 +14,6 @@ class Genre < ActiveRecord::Base
 
   def all_artist_names
     # return an array of strings containing every musician's name
-    return artists,names
+    return artists.name
   end
 end
