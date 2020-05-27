@@ -15,7 +15,7 @@ class Song < ActiveRecord::Base
       Artist.create(name: "Drake")
     end
     
-    self.artist = Artist.where(name: "Drake")
+    self.artist = Artist.where(name: "Drake")[0]
 
   end
 end
